@@ -1,0 +1,113 @@
+@CHARSET "UTF-8";
+
+.imagembanerprincipal {
+	max-width: 130px;
+	/*cabeçalho imagem*/
+}
+
+.menucabeçalho {
+	/*cabeçalho */
+	
+}
+
+.menu {
+	padding-bottom: 5px;
+}
+
+.menuVertical {
+	padding-top: 50px;
+	/*height:200px; */
+	float: left;
+	/*border-style: solid; para saber onde a div começa  e acaba*/
+}
+/*
+.conteudo { 
+	float: right;
+	width: 1000; 1000
+	
+	border-style: solid; 
+	border-color: aqua;
+	trabalha em conjunto com o container	
+}
+*/
+.rodape {
+	clear: both;
+	text-align: center;
+	border: 0.2px solid gray;
+	background-image: linear-gradient(to bottom, white, #c4c3d0);
+	border-radius: 3px;
+	height: 20px;
+	font-weight: bolder;
+}
+
+.centralizar {
+	text-align: center; /*centraliza texto */
+	color: blue;
+}
+
+.body { /* fundo total do site*/
+	background-color: #30303d;
+}
+
+/*-------------------------------- svg mapas --------------------------------*/
+.mapael .mapTooltip {
+	position: absolute;
+	background-color: #fff;
+	moz-opacity: 0.70;
+	opacity: 0.70;
+	filter: alpha(opacity = 70);
+	border-radius: 10px;
+	padding: 10px;
+	z-index: 1000;
+	max-width: 200px;
+	display: none;
+	color: #343434;
+}
+
+svg {
+	height: 57vw; /*altura do mapa dentro da div */
+}
+
+path { /* cor do mapa */
+	fill: #d3d3d3;
+	transition: .6s fill;
+	fill-opacity: 1;
+	stroke: #ffffff;
+	stroke-width: 0.5;
+	stroke-opacity: 1";
+}
+
+path:hover {
+	fill: #0000FF; /* cor do mapa quando o mouse passa por cima */
+}
+
+.container {
+	width: 1100px; /* serve para o tamanho do conteúdo e do mapa */
+	float: right;
+	height: 700px;
+	border-style: solid;
+	border-color: aqua;
+}
+
+.mapael .map {
+	position: relative;
+	/* posição do balão que da resposta no mapa */
+}
+
+.mapaBrasil {
+	padding-left: 150px;
+	padding-top: 20px; /*centralizando mapa do brasil na div*/
+}
+
+.mapaNordeste {
+	padding-left: 250px;
+	padding-top: -50px;
+	
+	/*centralizando mapa do nordeste na div*/
+}
+
+.mapaParaiba {
+	
+	
+	/*centralizando mapa do brasil na div*/
+}

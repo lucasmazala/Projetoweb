@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	template="/templates/modelo.xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+	<ui:define name="conteudo">
+
+		<!-- 		<script src="jquery.min.js" charset="utf-8"></script>  menu nao funciona com ele-->
+		<script src="../resources/javascript/jquery.mousewheel.min.js"
+			charset="utf-8"></script>
+		<script src="../resources/javascript/raphael-min.js" charset="utf-8"></script>
+		<script src="../resources/javascript/jquery.mapael.js" charset="utf-8"></script>
+		<script src="../resources/javascript/world_countries.js"
+			charset="utf-8"></script>
+
+
+
+		<script type="text/javascript">
+        $(function () {
+            $(".mapcontainer").mapael({
+                map: {
+                    name: "world_countries",
+
+                },		
+				
+				areas: {
+                   "BR": {
+                        value: "168869",
+                        href: "../pages/brasilMap.xhtml",                       
+                        tooltip: {content: "Brasil"}
+						
+                    },
+					
+					"path4150": {
+                         value: "168869",
+                        href: "#",                       
+                        tooltip: {content: "  style=\"font-weight:bold;\">estado (2) <br />Population : 555"}
+                    },
+					"path321": {
+                        value: "168869",
+                        href: "#",                       
+                        tooltip: {content: "  style=\"font-weight:bold;\">ffff (6) <br />Population : 2617939"}
+                    },
+					"path325": {
+                       value: "168869",
+                        href: "#",                       
+                        tooltip: {content: "  style=\"font-weight:bold;\">abd (5) <br />Population : 2617939"}
+                    },
+					
+					"path4146": {
+                        value: "168869",
+                        href: "https://translate.google.com.br/?hl=pt-BR#en/pt/hook%20map",
+                        tooltip: {content: "  style=\"font-weight:bold;\">desconhecido <br />Population : 4146"}
+                    },
+					
+					  "mun_2501906": {
+                        value: "168869",
+                        href: "#",
+                        tooltip: {content: "  style=\"font-weight:bold;\">Haute-Corse (2B) <br />Population : 168869"}
+                    },
+					
+					 "path4162": {
+                        value: "168869",
+                        href: "#",
+                        tooltip: {content: "  style=\"font-weight:bold;\">Haute-Corse (2B) <br />Population : teste"}
+                    },
+
+				}
+				            
+                
+            });
+        });
+    </script>
+
+
+		<body>
+			<div class="container">
+
+				<h1> <br></br></h1>
+
+				<div class="mapcontainer">
+					<div class="map"></div>
+					<div class="areaLegend"></div>
+				</div>
+
+
+			</div>
+
+
+		</body>
+	</ui:define>
+</ui:composition>
