@@ -67,8 +67,8 @@
 svg {
 	height: 57vw; /*altura do mapa dentro da div */
 }
-
-path { /* cor do mapa */
+/*
+path {  cor do mapa 
 	fill: #d3d3d3;
 	transition: .6s fill;
 	fill-opacity: 1;
@@ -78,13 +78,13 @@ path { /* cor do mapa */
 }
 
 path:hover {
-	fill: #0000FF; /* cor do mapa quando o mouse passa por cima */
-}
+	fill: #0000FF;  cor do mapa quando o mouse passa por cima 
+} */
 
 .container {
-	width: 1100px; /* serve para o tamanho do conteúdo e do mapa */
+	width: 1000px; /* serve para o tamanho do conteúdo e do mapa */
 	float: right;
-	height: 700px;
+	height: 850px;
 	border-style: solid;
 	border-color: aqua;
 }
@@ -94,20 +94,18 @@ path:hover {
 	/* posição do balão que da resposta no mapa */
 }
 
-.mapaBrasil {
-	padding-left: 150px;
-	padding-top: 20px; /*centralizando mapa do brasil na div*/
+.mapael .areaLegend {
+	max-height: 100px;
+	margin-bottom: 20px;
+	border-style: solid;
+	border-color: aqua;
+	background-color: yellow;
+		
+
+	/* legenda mapa */
 }
 
-.mapaNordeste {
-	padding-left: 250px;
-	padding-top: -50px;
+/*.mapaParaiba {
+	centralizando mapa do brasil na div
 	
-	/*centralizando mapa do nordeste na div*/
-}
-
-.mapaParaiba {
-	
-	
-	/*centralizando mapa do brasil na div*/
-}
+}*/

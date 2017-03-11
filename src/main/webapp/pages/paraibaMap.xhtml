@@ -6,14 +6,15 @@
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
 	template="/templates/modelo.xhtml">
 
+
 	<ui:define name="conteudo">
 
-<!-- 		<script src="jquery.min.js" charset="utf-8"></script>  menu nao funciona com ele-->
-		<script src="../resources/javascript/jquery.mousewheel.min.js" charset="utf-8"></script>
+		<!-- 		<script src="jquery.min.js" charset="utf-8"></script>  menu nao funciona com ele-->
+		<script src="../resources/javascript/jquery.mousewheel.min.js"
+			charset="utf-8"></script>
 		<script src="../resources/javascript/raphael-min.js" charset="utf-8"></script>
 		<script src="../resources/javascript/jquery.mapael.js" charset="utf-8"></script>
 		<script src="../resources/javascript/paraiba.js" charset="utf-8"></script>
-		
 
 
 		<script type="text/javascript">
@@ -21,68 +22,121 @@
             $(".mapcontainer").mapael({
                 map: {
                     name: "paraiba",
+                    defaultArea: {
+                        attrs: {
+                            stroke: "#fff", //cor das divisórias do mapa
+                            "stroke-width": 1 //diâmetro da divisória do mapa
+                        }
+                    }
+                },
+                legend: {
+                    area: {
+                        mode: "horizontal",
+                        title: "Countries population",
+                        labelAttrs: {
+                            "font-size": 12
+                            
+                            
+                        },
+                        marginLeft: 5,
+                        marginLeftLabel: 5,
+                        slices: [
+                            {
+                                max: 5000000,
+                                attrs: {
+                                    fill: "#6aafe1"
+                                },
+                                label: "0-5 millions" 
+                            },
+                            {
+                                min: 5000000,
+                                max: 10000000,
+                                attrs: {
+                                    fill: "#459bd9"
+                                },
+                                label: "5-10 millions"
+                            },
+                            {
+                                min: 10000000,
+                                max: 50000000,
+                                attrs: {
+                                    fill: "#2579b5"
+                                },
+                                label: "10-50 millions"
+                            },
+                            {
+                                min: 50000000,
+                                attrs: {
+                                    fill: "#1a527b"
+                                },
+                                label: "> 50 millions"
+                            }
+                        ]
+                    },
+                   
                     
                 },
-				
-				areas: {
-                   "path4148": {
-                        value: "168869",
-                        href: "#",                       
-                        tooltip: {content: " style=\"font-weight:bold;\">estado (1)<br />Population : 444"}
-						
+              
+                areas: {
+                    
+                    "path4146": {
+                        "value": "196655014",
+                        "href": "#",
+                        "tooltip": {
+                            "content": " style= Brazil<br/>Population : 196655014"
+                        }
                     },
-					
-					"path4150": {
-                         value: "168869",
-                        href: "#",                       
-                        tooltip: {content: " style=\"font-weight:bold;\">estado (2) <br />Population : 555"}
+                   
+                    "path4148": {
+                        "value": "31159",
+                        "href": "#",
+                        "tooltip": {
+                            "content": " style=United States <br />Population : 311591917"
+                        }
                     },
-					"path321": {
-                        value: "168869",
-                        href: "#",                       
-                        tooltip: {content: "style=\"font-weight:bold;\">ffff (6)<br />Population : 2617939"}
+                    "path4150": {
+                        "value": "3591917",
+                        "href": "#",
+                        "tooltip": {
+                            "content": " style=United States <br />Population : 311591917"
+                        }
                     },
-					"path325": {
-                       value: "168869",
-                        href: "#",                       
-                        tooltip: {content: " style=\"font-weight:bold;\">abd (5)<br />Population : 2617939"}
+                    "path4152": {
+                        "value": "11591917",
+                        "href": "#",
+                        "tooltip": {
+                            "content": " style=United States <br />Population : 311591917"
+                        }
                     },
-					
-					"path4146": {
-                        value: "168869",
-                        href: "https://translate.google.com.br/?hl=pt-BR#en/pt/hook%20map",
-                        tooltip: {content: "desconhecido<br />Population : 4146"}
+                    "path4154": {
+                        "value": "311591917",
+                        "href": "#",
+                        "tooltip": {
+                            "content": " style=United States <br />Population : 311591917"
+                        }
                     },
-					
-					  "mun_2501906": {
-                        value: "168869",
-                        href: "#",
-                        tooltip: {content: " style=\"font-weight:bold;\">Haute-Corse (2B)<br />Population : 168869"}
+                    "path4156": {
+                        "value": "6000000",
+                        "href": "#",
+                        "tooltip": {
+                            "content": " style=United States <br />Population : 311591917"
+                        }
                     },
-					
-					 "path4162": {
-                        value: "168869",
-                        href: "#",
-                        tooltip: {content: " style=\"font-weight:bold;\">Haute-Corse (2B) <br />Population : teste"}
-                    },
-
-				}
-				
+                   
+                }
             });
         });
     </script>
 
 		<div class="container">
-
-<div class="mapaParaiba">
-
 			<div class="mapcontainer">
 				<div class="map">
 					<span>Alternative content for the map</span>
 				</div>
-
+				<div class="areaLegend">
+					<span>Alternative content for the legend</span>
+				</div>
 			</div>
-</div>
 		</div>
 
 	</ui:define>
