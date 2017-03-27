@@ -36,11 +36,16 @@
 		<property name="show_sql">true</property>
 
 		<!-- Drop and re-create the database schema on startup 
-		cria as tabelas do bd/ pode coloar create, update ou validate-->
-		<property name="hbm2ddl.auto">update</property>
+		cria as tabelas do bd/ pode colocar create, update ou validate-->
+		<property name="hbm2ddl.auto">validate</property>
  
-		 <!-- <mapping resource="org/hibernate/tutorial/domain/Event.hbm.xml" /> 
-		 será explicado mais na frente-->
+		 <!-- Mapeamento das entidades -->
+		 <mapping class="br.com.projetoweb.entity.Municipio" />
+		 <mapping class="br.com.projetoweb.entity.EscolaMunicipal" />
+		 <mapping class="br.com.projetoweb.entity.SetorPrivadoMunicipal" />
+		 <mapping class="br.com.projetoweb.entity.SetorPublicoMunicipal" />
+		 		
+		 
 
 	</session-factory>
 
