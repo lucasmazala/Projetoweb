@@ -1,8 +1,22 @@
 package br.com.projetoweb.entity;
 
-public class EscolaMunicipal {
+import java.io.Serializable;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+@SuppressWarnings("serial")
+@Entity
+public class EscolaMunicipal implements Serializable{
+	@ManyToOne
+	@JoinColumn(name="cod_mun") /*@JoinColumn é utilizado para nomearmos 
+	a coluna que possui a chave-estrangeira requerida pela associação.
+	 Se nada for especificado, será utilizado o nome do campo.*/
+	@Id // tem que especificar qual é a chave primária, mesmo já tendo no bd
 	private Municipio municipio;
+	@Id 
 	private int ano;
 	private int analfabeto;
 	private int ate_5º_incompleto;

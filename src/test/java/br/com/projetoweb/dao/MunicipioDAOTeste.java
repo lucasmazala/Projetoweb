@@ -7,11 +7,12 @@ import br.com.projetoweb.entity.Municipio;
 public class MunicipioDAOTeste {
 	@Test
 	public void salvar(){
-		Municipio mun = new Municipio();
-		mun.setCod_Municipio(87654321);
-		mun.setMunicipio("TesteInsert");
-		
-		MunicipioDAO munDAO = new MunicipioDAO();
-		munDAO.salvar(mun);
+//		Municipio mun = new Municipio();
+//		mun.setCod_Municipio(97654321);
+//		mun.setMunicipio("TesteInsert1");
+//		
+//		MunicipioDAO munDAO = new MunicipioDAO();
+//		munDAO.salvar(mun);
+		// funcionando bem
 	}
 }

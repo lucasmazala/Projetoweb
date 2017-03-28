@@ -1,8 +1,20 @@
 package br.com.projetoweb.entity;
 
-public class SetorPublicoMunicipal {
+import java.io.Serializable;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+@SuppressWarnings("serial")
+@Entity
+public class SetorPublicoMunicipal implements Serializable{
+	@ManyToOne
+	@JoinColumn(name="cod_mun")
+	@Id // tem que especificar qual é a chave primária, mesmo já tendo no bd
 	private Municipio municipio;
+	@Id 
 	private int ano;
 	private int setor_publico_federal;
 	private int setor_publico_estadual;

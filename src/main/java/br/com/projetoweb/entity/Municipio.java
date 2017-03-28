@@ -1,7 +1,14 @@
 package br.com.projetoweb.entity;
 
-public class Municipio {
+import java.io.Serializable;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@SuppressWarnings("serial")
+@Entity
+public class Municipio implements Serializable{
+	@Id // tem que especificar qual é a chave primária, mesmo já tendo no bd
 	private int cod_municipio;
 	private String municipio;
 
