@@ -9,7 +9,7 @@ public class HibernateUtil {
 
 	private static final SessionFactory fabricaDeSessoes = criarFabricaDeSessoes();
 	
-	public static SessionFactory getFabricadesessoes() {
+	public static SessionFactory getFabricaDeSessoes() {
 		return fabricaDeSessoes;
 	}
 

@@ -1,23 +1,13 @@
 package br.com.projetoweb.entity;
 
 import java.io.Serializable;
-
 import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 
 @SuppressWarnings("serial")
 @Entity
-public class EscolaMunicipal implements Serializable{
-	@ManyToOne
-	@JoinColumn(name="cod_mun") /*@JoinColumn é utilizado para nomearmos 
-	a coluna que possui a chave-estrangeira requerida pela associação.
-	 Se nada for especificado, será utilizado o nome do campo.*/
-	@Id // tem que especificar qual é a chave primária, mesmo já tendo no bd
-	private Municipio municipio;
-	@Id 
-	private int ano;
+public class EscolaMunicipal extends GenericEntity implements Serializable {
+	private String municipio;
+	private String ano;
 	private int analfabeto;
 	private int ate_5º_incompleto;
 	private int fundamental_completo_5º;
@@ -27,20 +17,20 @@ public class EscolaMunicipal implements Serializable{
 	private int medio_completo;
 	private int superior_incompleto;
 	private int superior_completo;
-
-	public Municipio getMunicipio() {
+	
+	public String getMunicipio() {
 		return municipio;
 	}
 
-	public void setMunicipio(Municipio municipio) {
+	public void setMunicipio(String municipio) {
 		this.municipio = municipio;
 	}
 
-	public int getAno() {
+	public String getAno() {
 		return ano;
 	}
 
-	public void setAno(int ano) {
+	public void setAno(String ano) {
 		this.ano = ano;
 	}
 

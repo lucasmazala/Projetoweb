@@ -3,37 +3,31 @@ package br.com.projetoweb.entity;
 import java.io.Serializable;
 
 import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 
 @SuppressWarnings("serial")
 @Entity
-public class SetorPrivadoMunicipal implements Serializable {
-	@ManyToOne
-	@JoinColumn(name="cod_mun")
-	@Id // tem que especificar qual é a chave primária, mesmo já tendo no bd
-	private Municipio municipio;
-	@Id
-	private int ano;
+public class SetorPrivadoMunicipal extends GenericEntity implements Serializable {
+
+	private String municipio;
+	private String ano;
 	private int entidade_empresa_estatal;
 	private int entidade_empresa_privada;
 	private int entidade_sem_fins_lucrativos;
 	private int pessoa_fisica_outras_organizaçoes_legais;
 
-	public Municipio getMunicipio() {
+	public String getMunicipio() {
 		return municipio;
 	}
 
-	public void setMunicipio(Municipio municipio) {
+	public void setMunicipio(String municipio) {
 		this.municipio = municipio;
 	}
 
-	public int getAno() {
+	public String getAno() {
 		return ano;
 	}
 
-	public void setAno(int ano) {
+	public void setAno(String ano) {
 		this.ano = ano;
 	}
 

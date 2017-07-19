@@ -18,6 +18,7 @@
 
 
 		<script type="text/javascript">
+				
         $(function () {
             $(".mapcontainer").mapael({
                 map: {
@@ -28,6 +29,7 @@
                             "stroke-width": 1 //diâmetro da divisória do mapa
                         }
                     }
+            
                 },
                 legend: {
                     area: {
@@ -81,9 +83,10 @@
                     
                     "path4146": {
                         "value": "196655014",
-                        "href": "#",
+                        "href": "#{escolaMunicipalBean.escMunicipal}",
                         "tooltip": {
-                            "content": " style= Brazil<br/>Population : 196655014"
+                        	
+                            "content":  " style= Brazil<br/>Population : 196655014"
                         }
                     },
                    
@@ -135,6 +138,7 @@
 				</div>
 				<div class="areaLegend">
 					<span>Alternative content for the legend</span>
+					
 				</div>
 			</div>
 		</div>
