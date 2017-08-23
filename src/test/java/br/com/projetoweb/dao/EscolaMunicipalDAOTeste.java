@@ -17,9 +17,9 @@ public class EscolaMunicipalDAOTeste {
 		escola.setMunicipio("municipioteste");
 		escola.setAno("2015");
 		escola.setAnalfabeto(2);
-		escola.setAte_5º_incompleto(34);
-		escola.setFundamental_completo_5º(94);
-		escola.setDe_6ªa9º_fundamental(512);
+		escola.setAte_5_incompleto(34);
+		escola.setFundamental_completo_5(94);
+		escola.setDe_6a9_fundamental(512);
 		escola.setFundamental_completo(616);
 		escola.setMedio_incompleto(9143);
 		escola.setMedio_completo(91222);
@@ -38,9 +38,9 @@ public class EscolaMunicipalDAOTeste {
 		for (EscolaMunicipal escMunicipal : lista) {
 			System.out.println("\n Município= " + escMunicipal.getMunicipio()+ "\n ano= "
 					+ escMunicipal.getAno() + "\n Analfabeto= " + escMunicipal.getAnalfabeto() + "\n Ate_5º_incompleto "
-					+ escMunicipal.getAte_5º_incompleto() + "\n Fundamental_completo_5º "
-					+ escMunicipal.getFundamental_completo_5º() + "\n De_6ªa9º_fundamental "
-					+ escMunicipal.getDe_6ªa9º_fundamental() + "\n Fundamental_completo "
+					+ escMunicipal.getAte_5_incompleto() + "\n Fundamental_completo_5º "
+					+ escMunicipal.getFundamental_completo_5() + "\n De_6ªa9º_fundamental "
+					+ escMunicipal.getDe_6a9_fundamental() + "\n Fundamental_completo "
 					+ escMunicipal.getFundamental_completo() + "\n Medio_incompleto "
 					+ escMunicipal.getMedio_incompleto() + "\n Medio_completo " + escMunicipal.getMedio_completo()
 					+ "\n Superior_incompleto " + escMunicipal.getSuperior_incompleto() + "\n Superior_completo "
@@ -57,9 +57,9 @@ public class EscolaMunicipalDAOTeste {
 		for (EscolaMunicipal escMunicipal : lista) {
 			System.out.println("\n Município= " + escMunicipal.getMunicipio()+ "\n ano= "
 					+ escMunicipal.getAno() + "\n Analfabeto= " + escMunicipal.getAnalfabeto() + "\n Ate_5º_incompleto "
-					+ escMunicipal.getAte_5º_incompleto() + "\n Fundamental_completo_5º "
-					+ escMunicipal.getFundamental_completo_5º() + "\n De_6ªa9º_fundamental "
-					+ escMunicipal.getDe_6ªa9º_fundamental() + "\n Fundamental_completo "
+					+ escMunicipal.getAte_5_incompleto() + "\n Fundamental_completo_5º "
+					+ escMunicipal.getFundamental_completo_5() + "\n De_6ªa9º_fundamental "
+					+ escMunicipal.getDe_6a9_fundamental() + "\n Fundamental_completo "
 					+ escMunicipal.getFundamental_completo() + "\n Medio_incompleto "
 					+ escMunicipal.getMedio_incompleto() + "\n Medio_completo " + escMunicipal.getMedio_completo()
 					+ "\n Superior_incompleto " + escMunicipal.getSuperior_incompleto() + "\n Superior_completo "

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	template="/templates/modelo3.xhtml">
+
+	<ui:define name="conteudo">
+	
+	<h:form> <!-- sem hform filterby e orderby não funcionaram -->
+	<p:panel header = "Setor Privado Municipal" >
+		<p:dataTable emptyMessage="Não há dados"
+		paginator= "true"
+		value="#{setorPrivadoMunicipalBEAN.listSetorPrivadoMunicipal}" var="cursor">
+		<!-- var="cursor" para mostrar cada objeto da lista -->
+					
+			<p:column headerText= "Municípios" filterBy="#{cursor.municipio}">
+				<h:outputText value="#{cursor.municipio}" />			
+			</p:column>
+			<p:column headerText= "Ano" filterBy="#{cursor.ano}">
+				<h:outputText value="#{cursor.ano}" />			
+			</p:column>
+			
+			<p:column headerText= "Entidade Empresa Estatal">
+				<h:outputText value="#{cursor.entidade_empresa_estatal} "  />			
+			</p:column>
+			<p:column headerText= "Entidade Empresa Privada">
+				<h:outputText value="#{cursor.entidade_empresa_privada}" />			
+			</p:column>
+			<p:column headerText= "Entidade Sem Fins Lucrativos">
+				<h:outputText value="#{cursor.entidade_sem_fins_lucrativos}" />			
+			</p:column>
+			<p:column headerText= "Pessoa Física e Outras Organizações Legais">
+				<h:outputText value="#{cursor.pessoa_fisica_outras_organizaçoes_legais}" />			
+			</p:column>
+			<p:column headerText= "Total">
+				<h:outputText value="#{cursor.total}" />			
+			</p:column>			
+			
+			<p:column headerText= "Código" sortBy="#{cursor.codigo}">
+				<h:outputText value="#{cursor.codigo}" />			
+			</p:column>
+			
+		</p:dataTable>
+	
+	</p:panel>
+	</h:form>
+</ui:define>
+</ui:composition>
+ 

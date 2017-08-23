@@ -9,7 +9,11 @@ public class GeoJsonBEANTest {
 		GeoJsonBEAN json = new GeoJsonBEAN();
 		
 		json.createJson();
+		
+		
 	}
 	
-	
+	// 48 lat lng 1 city
 }
+
+

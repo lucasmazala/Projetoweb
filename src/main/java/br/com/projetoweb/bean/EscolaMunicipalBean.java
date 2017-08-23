@@ -4,7 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 
-
+import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import com.google.gson.Gson;
@@ -21,16 +21,18 @@ public class EscolaMunicipalBean {
 	List<EscolaMunicipal> escMunicipalList;
 	
 	
-
+	@PostConstruct // chama o método automáticamente depois do contrutor da classe
 	public void listar() {
 		try {
 			EscolaMunicipalDAO escMunDAO = new EscolaMunicipalDAO();
 			escMunicipalList= escMunDAO.listar();
-		//	String json = gson.toJson(escMunicipalList);
-			Gson gson = new Gson();
-			String createJson = gson.toJson(escMunicipalList);
-			System.out.println(createJson);
-			criarJson(createJson);
+		
+			//	String json = gson.toJson(escMunicipalList);
+
+//			Gson gson = new Gson(); funcionando
+//			String createJson = gson.toJson(escMunicipalList);
+//			System.out.println(createJson);
+//			criarJson(createJson); até aqui
 			
 //			EscolaMunicipal escM1= gson.fromJson(testJson,EscolaMunicipal.class);
 //			problema https://www.youtube.com/watch?v=D-QPTvNDmPA

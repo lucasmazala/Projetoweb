@@ -1,0 +1,1489 @@
+package br.com.projetoweb.bean;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+import javax.json.Json;
+import javax.json.JsonObject;
+
+import com.google.gson.Gson;
+
+public class EditarGeo {
+
+	public void createJson() {
+
+		JsonObject creatingJson = Json.createObjectBuilder() // cria objeto {}
+				.add("type", "FeatureCollection")
+				.add("features", Json.createArrayBuilder()// cria o array
+															// features []
+						.add(Json.createObjectBuilder() // cria objeto {}
+								.add("type", "Feature")
+								.add("properties",
+										Json.createObjectBuilder().add("id", "2500106").add("name", "Água Branca")
+												.add("description", "Água Branca"))
+								.add("geometry", Json.createObjectBuilder().add("type", "Polygon").add("coordinates",
+										Json.createArrayBuilder().add(Json.createArrayBuilder()
+												.add(Json.createArrayBuilder().add(-37.7037601546).add(-7.3731762414)
+
+												)// each lat and lng of city
+												.add(Json.createArrayBuilder().add(-37.6923221715).add(-7.3789316639)
+
+												)// each lat and lng of city
+												.add(Json.createArrayBuilder().add(-37.6719736902).add(-7.3764651899)
+
+												)// each lat and lng of city
+												.add(Json.createArrayBuilder().add(-37.6494786532).add(-7.4022367778)
+
+												)// each lat and lng of city
+												.add(Json.createArrayBuilder().add(-37.6416503070).add(-7.4119640252)
+
+												)// each lat and lng of city
+												.add(Json.createArrayBuilder().add(-37.6119253302).add(-7.4110296802)
+
+												)// each lat and lng of city
+												.add(Json.createArrayBuilder().add(-37.6085388856).add(-7.4107184445)
+
+												)// each lat and lng of city
+												.add(Json.createArrayBuilder().add(-37.5953212301).add(-7.4170073756)
+
+												)// each lat and lng of city
+												.add(Json.createArrayBuilder().add(-37.5929918014).add(-7.4285712765)
+
+												)// each lat and lng of city
+												.add(Json.createArrayBuilder().add(-37.5703127562).add(-7.4534823691))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.5699295473).add(-7.4539016767))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.5681986374).add(-7.4558030883))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.5736748347).add(-7.4588626178))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.5654147836).add(-7.4825074645))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.5714470389).add(-7.4886916125))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.5714383226).add(-7.4887060808))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.5863839038).add(-7.4987013277))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.6094248480).add(-7.5076244139))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.6110274017).add(-7.5181609511))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.6195985696).add(-7.5254721440))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.6300320777).add(-7.5321036347))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.6441957015).add(-7.5294708740))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.6494814782).add(-7.5299032733))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.6591834592).add(-7.5227299678))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.6762883962).add(-7.5352063875))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.6818043504).add(-7.5479685062))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.7061598515).add(-7.5501762792))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.7097420287).add(-7.5591182880))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.7062251895).add(-7.5690591348))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.7106646044).add(-7.5733453956))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.7206845884).add(-7.5814852006))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.7283852612).add(-7.5793224273))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.7346032968).add(-7.5968071907))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.7494153443).add(-7.5662349877))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.7494232327).add(-7.5563271260))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.7320730976).add(-7.5448793626))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.7270117305).add(-7.5414996609))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.7052942352).add(-7.4759948791))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.7005479159).add(-7.4616872929))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.7109791446).add(-7.4362924428))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.7264611165).add(-7.4318823705))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.7243169838).add(-7.4087413043))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.7269126683).add(-7.3937490633))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.7201185461).add(-7.3844369027))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.7210160789).add(-7.3819217670))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.7111934552).add(-7.3811083963))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.7065070986).add(-7.3850485924))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-37.7037601546).add(-7.3731762414))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+
+										)
+
+						)// array with all lat and lng of a city
+
+						))// fecha obj geometry and obj properties
+
+						.add(Json.createObjectBuilder() // cria objeto {}
+								.add("type", "Feature")
+								.add("properties",
+										Json.createObjectBuilder().add("id", "2500205").add("name", "Aguiar")
+												.add("description", "Aguiar"))
+								.add("geometry", Json.createObjectBuilder().add("type", "Polygon").add("coordinates",
+										Json.createArrayBuilder().add(Json.createArrayBuilder()
+												.add(Json.createArrayBuilder().add(-38.2050358822).add(-7.0098057424)
+
+												)// each lat and lng of city
+												.add(Json.createArrayBuilder().add(-38.1562922235).add(-7.0094375272)
+
+												)// each lat and lng of city
+												.add(Json.createArrayBuilder().add(-38.1322238322).add(-7.0077362418)
+
+												)// each lat and lng of city
+												.add(Json.createArrayBuilder().add(-38.0896716242).add(-7.0124371674))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.0887476125).add(-7.0146317483))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.0582177878).add(-7.0870471685))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.0912735245).add(-7.0902680948))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.0946079239).add(-7.0907702400))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.0979223255).add(-7.0864594293))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.1064438639).add(-7.0875245786))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.1236211750).add(-7.0863244389))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.1297215025).add(-7.0901588646))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.1335411344).add(-7.0873908030))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.1432092027).add(-7.0878412339))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.1531707468).add(-7.0989576354))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.1605619630).add(-7.1080540878))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.1754316203).add(-7.1077982607))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.1810008959).add(-7.1185120965))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.1867909770).add(-7.1179338574))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.1876060414).add(-7.1141185101))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+
+												.add(Json.createArrayBuilder().add(-38.1980996766).add(-7.1203044900))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.2041615937).add(-7.1198265415))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.2324883693).add(-7.1311331812))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.2313189405).add(-7.1463035203))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.2271360122).add(-7.1510627406))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.1717592648).add(-7.1605464484))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.2300981144).add(-7.1571372734))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.2426435124).add(-7.1669086937))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.2720321164).add(-7.1774041446))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.2912173432).add(-7.1748459785))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+
+												.add(Json.createArrayBuilder().add(-38.2953557028).add(-7.1574942546))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.2954837782).add(-7.1564247015))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.2944346221).add(-7.1446878671))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.2839587381).add(-7.1291007647))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.3014740415).add(-7.1272298407))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.3309449134).add(-7.1421876326))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.3310545726).add(-7.1158690322))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.3310906128).add(-7.1070371524))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.3312760472).add(-7.1062615273))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.3215496995).add(-7.0962323883))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+
+												.add(Json.createArrayBuilder().add(-38.3178999077).add(-7.0839730864))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.3095003898).add(-7.0823303145))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.3353457964).add(-7.0638536703))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.3223590445).add(-7.0623248647))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.2976509033).add(-7.0360412964))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.2838564357).add(-7.0116401030))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.2771316075).add(-7.0039251053))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.2622779384).add(-6.9928333899))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.2536951109).add(-6.9942965740))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.2299128824).add(-7.0027129498))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-38.2050358822).add(-7.0098057424))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+										)
+
+						)// array with all lat and lng of a city
+
+						))// fecha obj geometry and obj properties
+
+						.add(Json.createObjectBuilder() // cria objeto {}
+								.add("type", "Feature")
+								.add("properties",
+										Json.createObjectBuilder().add("id", "2500304").add("name", "Alagoa Grande")
+												.add("description", "Alagoa Grande"))
+								.add("geometry", Json.createObjectBuilder().add("type", "Polygon").add("coordinates",
+										Json.createArrayBuilder().add(Json.createArrayBuilder()
+												.add(Json.createArrayBuilder().add(-35.5346505475).add(-7.0093716626))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5233622552).add(-7.0312944746))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5150219957).add(-7.0304049193))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5101336785).add(-7.0316403711))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5066673223).add(-7.0254842982))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5011092565).add(-7.0259115863))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.4968546149).add(-7.0331515734))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.4908357036).add(-7.0663608872))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5142762725).add(-7.0620481716))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5111150783).add(-7.0708094162))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5045660490).add(-7.0753756597))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5070399987).add(-7.0838598128))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.4999671147).add(-7.0944495536))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5232722771).add(-7.1049027484))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5257881597).add(-7.1095910703))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5267819384).add(-7.1143456721))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5327631394).add(-7.1200591044))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5692125639).add(-7.1223492932))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6134964008).add(-7.1339246106))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6137465071).add(-7.1339891913))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+
+												.add(Json.createArrayBuilder().add(-35.6241248241).add(-7.1324476198))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6349562850).add(-7.1328783302))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6474554743).add(-7.1449611946))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6527536580).add(-7.1395824016))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6600435817).add(-7.1388730661))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6719276454).add(-7.1469437812))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6802077757).add(-7.1483501235))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6883485083).add(-7.1351344613))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7021518378).add(-7.1127186363))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7076085353).add(-7.1038541885))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+
+												.add(Json.createArrayBuilder().add(-35.7076321637).add(-7.0900546264))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7109529895).add(-7.0885484665))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7048653458).add(-7.0817522622))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7050764908).add(-7.0728095738))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7011691025).add(-7.0616199212))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6958118279).add(-7.0635179881))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6831847449).add(-7.0462424626))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6713560439).add(-7.0479110331))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6662750709).add(-7.0479110331))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6615063550).add(-7.0343534547))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+
+												.add(Json.createArrayBuilder().add(-35.6781675386).add(-7.0396372392))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6912455635).add(-7.0356519232))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6927561032).add(-7.0274723261))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6835893640).add(-7.0258058331))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6722474576).add(-7.0171032205))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6653344334).add(-7.0123008639))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6435119834).add(-6.9844860372))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6367477806).add(-6.9803261889))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6125978983).add(-6.9765442596))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6006318676).add(-6.9675365005))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+
+												.add(Json.createArrayBuilder().add(-35.5940512624).add(-6.9531636171))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5933637848).add(-6.9478121819))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5803820343).add(-6.9414901535))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5736169361).add(-6.9694796863))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5591649068).add(-6.9772618235))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5588359061).add(-6.9776928493))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5561244650).add(-6.9812447672))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+
+												.add(Json.createArrayBuilder().add(-35.5346505475).add(-7.0093716626))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+										)
+
+						)// array with all lat and lng of a city
+
+						))// fecha obj geometry and obj properties
+
+						.add(Json.createObjectBuilder() // cria objeto {}
+								.add("type", "Feature")
+								.add("properties",
+										Json.createObjectBuilder().add("id", "2500403").add("name", "Alagoa Nova")
+												.add("description", "Alagoa Nova"))
+								.add("geometry", Json.createObjectBuilder().add("type", "Polygon").add("coordinates",
+										Json.createArrayBuilder().add(Json.createArrayBuilder()
+												.add(Json.createArrayBuilder().add(-35.7956605978).add(-7.0233298805)
+
+												)// each lat and lng of city
+												.add(Json.createArrayBuilder().add(-35.7883797878).add(-7.0293064281))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7791899636).add(-7.0273504191))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7677619369).add(-7.0312422082))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7627294431).add(-7.0329511804))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7625969869).add(-7.0330014110))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7553786276).add(-7.0266318508))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7532379256).add(-7.0308638238))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7433885655).add(-7.0291836415))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7355392872).add(-7.0216419455))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7148045463).add(-7.0249944982))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7115744081).add(-7.0232516639))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6927561032).add(-7.0274723261))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6912455635).add(-7.0356519232))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6781675386).add(-7.0396372392))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6615063550).add(-7.0343534547))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6662750709).add(-7.0378623356))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6713560439).add(-7.0479110331))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6831847449).add(-7.0462424626))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.6958118279).add(-7.0635179881))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+
+												.add(Json.createArrayBuilder().add(-35.7011691025).add(-7.0616199212))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7050764908).add(-7.0728095738))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7048653458).add(-7.0817522622))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7109529895).add(-7.0885484665))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7181033657).add(-7.0906986429))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7213553511).add(-7.0963665631))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7226989493).add(-7.0985387310))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7527146339).add(-7.1080652228))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7692886930).add(-7.1041928811))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7753175562).add(-7.1022350747))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+
+												.add(Json.createArrayBuilder().add(-35.7947213647).add(-7.1062642298))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7952779261).add(-7.1056326763))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.8046841372).add(-7.1014184863))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.8133040768).add(-7.1021266577))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.8115630306).add(-7.0951624233))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.8148092852).add(-7.0847170249))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.8178607963).add(-7.0766928318))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.8161140022).add(-7.0748868357))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.8233490631).add(-7.0718609506))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.8268983726).add(-7.0703759472))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+
+												.add(Json.createArrayBuilder().add(-35.8336970111).add(-7.0601326551))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.8418312334).add(-7.0563115351))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.8554132450).add(-7.0503150412))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.8552084325).add(-7.0501824653))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.8406942405).add(-7.0407857583))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.8320393219).add(-7.0291156557))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.8249941009).add(-7.0302050630))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.8092376283).add(-7.0318933640))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.8088577222).add(-7.0317905388))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.7956605978).add(-7.0233298805))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+
+										)
+
+						)// array with all lat and lng of a city
+
+						))// fecha obj geometry and obj properties
+
+						.add(Json.createObjectBuilder() // cria objeto {}
+								.add("type", "Feature")
+								.add("properties",
+										Json.createObjectBuilder().add("id", "2500502").add("name", "Alagoinha")
+												.add("description", "Alagoinha"))
+								.add("geometry", Json.createObjectBuilder().add("type", "Polygon").add("coordinates",
+										Json.createArrayBuilder().add(Json.createArrayBuilder()
+												.add(Json.createArrayBuilder().add(-35.5634486830).add(-6.9076043834))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5341058468).add(-6.9285429881))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.4790274554).add(-6.9231441642))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.4723656671).add(-6.9230677367))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.4716532950).add(-6.9351610244))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.4655591843).add(-6.9522510224))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.4584040906).add(-6.9571770768))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.4599012842).add(-6.9636597116))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.4591823615).add(-6.9737424557))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.4633804927).add(-6.9814290715))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.4793948431).add(-6.9898977063))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5189553050).add(-6.9858251289))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5236297008).add(-6.9913924235))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5149435736).add(-7.0057518537))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5197240183).add(-7.0185864313))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5149688670).add(-7.0222883045))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5150219957).add(-7.0304049193))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5233622552).add(-7.0312944746))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5346505475).add(-7.0093716626))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5561244650).add(-6.9812447672))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+
+												.add(Json.createArrayBuilder().add(-35.5588359061).add(-6.9776928493))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5591649068).add(-6.9772618235))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5736169361).add(-6.9694796863))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5803820343).add(-6.9414901535))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5797064502).add(-6.9408153063))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5709090537).add(-6.9347516961))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5823461504).add(-6.9192374662))// each
+																														// lat
+																														// and
+																														// lng
+																														// of
+																														// city
+												.add(Json.createArrayBuilder().add(-35.5634486830).add(-6.9076043834)
+
+										)// each lat and lng of city
+
+										)
+
+						)// array with all lat and lng of a city
+
+						))// fecha obj geometry and obj properties
+
+						.add(Json.createObjectBuilder() // cria objeto {}
+								.add("type", "Feature")
+								.add("properties",
+										Json.createObjectBuilder().add("id", "").add("name", "").add("description", ""))
+								.add("geometry", Json.createObjectBuilder().add("type", "Polygon").add("coordinates",
+										Json.createArrayBuilder().add(Json.createArrayBuilder()
+
+												
+										)// array 2 de 3
+
+				)// array with all lat and lng of a city
+
+				))// fecha obj geometry and obj properties
+
+				).build(); // final de tudo
+
+		String result = creatingJson.toString();
+
+		System.out.println(result);
+
+	}
+
+}

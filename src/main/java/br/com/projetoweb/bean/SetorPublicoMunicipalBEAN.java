@@ -4,6 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 
+import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 
@@ -17,17 +18,18 @@ import br.com.projetoweb.entity.SetorPublicoMunicipal;
 public class SetorPublicoMunicipalBEAN {
 
 	SetorPublicoMunicipal setorPublicoMunicipal;
-	List<SetorPublicoMunicipal> listSetorPublicoMunicipal;
+	List<SetorPublicoMunicipal> setorPublicoMunicipalList;
 	
+	@PostConstruct // chama o método automáticamente depois do construtor da classe,sem ele não carregou as infs do bd
 	public void listar(){
 		SetorPublicoMunicipalDAO setorPublicoMunicipalDAO = new SetorPublicoMunicipalDAO();
-		listSetorPublicoMunicipal = setorPublicoMunicipalDAO.listar();
+		setorPublicoMunicipalList = setorPublicoMunicipalDAO.listar();
 		
-		Gson gson = new Gson();
-		String createJson = gson.toJson(listSetorPublicoMunicipal);
-		System.out.println(createJson);
-		
-		criarJson(createJson);
+//		Gson gson = new Gson();
+//		String createJson = gson.toJson(listSetorPublicoMunicipal);
+//		System.out.println(createJson);
+//		
+//		criarJson(createJson);
 	}
 
 	private void criarJson(String createJson){
@@ -58,12 +60,12 @@ public class SetorPublicoMunicipalBEAN {
 		this.setorPublicoMunicipal = setorPublicoMunicipal;
 	}
 
-	public List<SetorPublicoMunicipal> getListSetorPublicoMunicipal() {
-		return listSetorPublicoMunicipal;
+	public List<SetorPublicoMunicipal> getSetorPublicoMunicipalList() {
+		return setorPublicoMunicipalList;
 	}
 
-	public void setListSetorPublicoMunicipal(List<SetorPublicoMunicipal> listSetorPublicoMunicipal) {
-		this.listSetorPublicoMunicipal = listSetorPublicoMunicipal;
+	public void setsetorPublicoMunicipalList(List<SetorPublicoMunicipal> setorPublicoMunicipalList) {
+		this.setorPublicoMunicipalList = setorPublicoMunicipalList;
 	}
 	
 }

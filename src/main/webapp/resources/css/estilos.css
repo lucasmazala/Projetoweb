@@ -20,16 +20,16 @@
 	float: left;
 	/*border-style: solid; para saber onde a div começa  e acaba*/
 }
-/*
-.conteudo { 
-	float: right;
-	width: 1000; 1000
+
+.conteudoJSF { 
 	
+	width: 1000;
+	/*usado só no template 3*/
 	border-style: solid; 
 	border-color: aqua;
-	trabalha em conjunto com o container	
+	
 }
-*/
+
 .rodape {
 	clear: both;
 	text-align: center;
@@ -37,7 +37,7 @@
 	background-image: linear-gradient(to bottom, white, #c4c3d0);
 	border-radius: 3px;
 	height: 20px;
-	font-weight: bolder;
+	font-weight: bolder; 
 }
 
 .centralizar {
@@ -84,28 +84,22 @@ path:hover {
 .container {
 	width: 1000px; /* serve para o tamanho do conteúdo e do mapa */
 	float: right;
-	height: 850px;
-	border-style: solid;
-	border-color: aqua;
+	height: 522px;
+	border-style:solid; 
+	border-color: #d3d3d3;
 }
 
-.mapael .map {
-	position: relative;
-	/* posição do balão que da resposta no mapa */
-}
-
-.mapael .areaLegend {
-	max-height: 100px;
-	margin-bottom: 20px;
-	border-style: solid;
-	border-color: aqua;
-	background-color: yellow;
-		
-
+.areaLegend {
+	float: right; /*float com float deixa a legenda solta dentro da div container*/
+	width: 1000px;
+	margin-top:0px;
+	margin-bottom: 0px;
+	text-align: center;
+	border: 0.2px solid gray;
+	background-image: linear-gradient(to bottom, white, #c4c3d0);
+	border-radius: 3px;
+	height: 20px;
+	font-weight: bolder;
+	
 	/* legenda mapa */
 }
-
-/*.mapaParaiba {
-	centralizando mapa do brasil na div
-	
-}*/

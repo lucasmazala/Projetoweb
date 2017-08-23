@@ -9,9 +9,9 @@ public class EscolaMunicipal extends GenericEntity implements Serializable {
 	private String municipio;
 	private String ano;
 	private int analfabeto;
-	private int ate_5º_incompleto;
-	private int fundamental_completo_5º;
-	private int de_6ªa9º_fundamental;
+	private int ate_5_incompleto; 
+	private int fundamental_completo_5;
+	private int de_6a9_fundamental;
 	private int fundamental_completo;
 	private int medio_incompleto;
 	private int medio_completo;
@@ -42,28 +42,28 @@ public class EscolaMunicipal extends GenericEntity implements Serializable {
 		this.analfabeto = analfabeto;
 	}
 
-	public int getAte_5º_incompleto() {
-		return ate_5º_incompleto;
+	public int getAte_5_incompleto() {
+		return ate_5_incompleto;
 	}
 
-	public void setAte_5º_incompleto(int ate_5º_incompleto) {
-		this.ate_5º_incompleto = ate_5º_incompleto;
+	public void setAte_5_incompleto(int ate_5_incompleto) {
+		this.ate_5_incompleto = ate_5_incompleto;
 	}
 
-	public int getFundamental_completo_5º() {
-		return fundamental_completo_5º;
+	public int getFundamental_completo_5() {
+		return fundamental_completo_5;
 	}
 
-	public void setFundamental_completo_5º(int fundamental_completo_5º) {
-		this.fundamental_completo_5º = fundamental_completo_5º;
+	public void setFundamental_completo_5(int fundamental_completo_5) {
+		this.fundamental_completo_5 = fundamental_completo_5;
 	}
 
-	public int getDe_6ªa9º_fundamental() {
-		return de_6ªa9º_fundamental;
+	public int getDe_6a9_fundamental() {
+		return de_6a9_fundamental;
 	}
 
-	public void setDe_6ªa9º_fundamental(int de_6ªa9º_fundamental) {
-		this.de_6ªa9º_fundamental = de_6ªa9º_fundamental;
+	public void setDe_6a9_fundamental(int de_6a9_fundamental) {
+		this.de_6a9_fundamental = de_6a9_fundamental;
 	}
 
 	public int getFundamental_completo() {

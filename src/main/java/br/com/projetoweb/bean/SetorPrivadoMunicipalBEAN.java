@@ -4,6 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 
+import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 
@@ -19,15 +20,16 @@ public class SetorPrivadoMunicipalBEAN {
 	SetorPrivadoMunicipal setorPrivadoMunicipal;
 	List<SetorPrivadoMunicipal> listSetorPrivadoMunicipal;
 	
+	@PostConstruct // chama o método automáticamente depois do construtor da classe,sem ele não carregou as infs do bd
 	public void listar(){
 		 SetorPrivadoMunicipalDAO setorPrivadoMunicipalDAO= new SetorPrivadoMunicipalDAO();
 		 listSetorPrivadoMunicipal = setorPrivadoMunicipalDAO.listar();
 		 
-		 Gson gson= new Gson();
-		 String createGson = gson.toJson(listSetorPrivadoMunicipal);
-		 System.out.println(createGson);
-		 
-		 criarJson(createGson);
+//		 Gson gson= new Gson();
+//		 String createGson = gson.toJson(listSetorPrivadoMunicipal);
+//		 System.out.println(createGson);
+//		 
+//		 criarJson(createGson);
 	}
 	
 	private void criarJson(String createGson){

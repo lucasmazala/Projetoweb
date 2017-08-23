@@ -14,6 +14,9 @@ public class SetorPublicoMunicipal extends GenericEntity implements Serializable
 	private int setor_publico_estadual;
 	private int setor_publico_municipal;
 	private int setor_publico_outros;
+	private int total;
+
+	
 
 	public String getMunicipio() {
 		return municipio;
@@ -63,4 +66,11 @@ public class SetorPublicoMunicipal extends GenericEntity implements Serializable
 		this.setor_publico_outros = setor_publico_outros;
 	}
 
+	public int getTotal() {
+		return total;
+	}
+
+	public void setTotal(int total) {
+		this.total = total;
+	}
 }
