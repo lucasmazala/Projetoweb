@@ -21,13 +21,11 @@
 	/*border-style: solid; para saber onde a div começa  e acaba*/
 }
 
-.conteudoJSF { 
-	
+.conteudoJSF {
 	width: 1000;
 	/*usado só no template 3*/
-	border-style: solid; 
+	border-style: solid;
 	border-color: aqua;
-	
 }
 
 .rodape {
@@ -37,7 +35,11 @@
 	background-image: linear-gradient(to bottom, white, #c4c3d0);
 	border-radius: 3px;
 	height: 20px;
-	font-weight: bolder; 
+	font-weight: bolder;
+	width: 1304px;
+	border-style: solid;
+	border-color: #d3d3d3;
+	
 }
 
 .centralizar {
@@ -47,6 +49,59 @@
 
 .body { /* fundo total do site*/
 	background-color: #30303d;
+}
+
+#googft-legend {
+	background-color: #fff;
+	border: 1px solid #000;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	margin: 5px;
+	padding: 10px 10px 8px;
+}
+
+#googft-legend p {
+	font-weight: bold;
+	margin-top: 0
+}
+
+#googft-legend div {
+	margin-bottom: 5px
+}
+
+.googft-legend-swatch {
+	border: 1px solid;
+	float: left;
+	height: 12px;
+	margin-right: 8px;
+	width: 20px
+}
+
+.googft-legend-range {
+	margin-left: 0
+}
+
+.googft-dot-icon {
+	margin-right: 8px
+}
+
+.googft-paddle-icon {
+	height: 24px;
+	left: -8px;
+	margin-right: -8px;
+	position: relative;
+	vertical-align: middle;
+	width: 24px
+}
+
+.googft-legend-source {
+	margin-bottom: 0;
+	margin-top: 8px
+}
+
+.googft-legend-source a {
+	color: #666;
+	font-size: 11px
 }
 
 /*-------------------------------- svg mapas --------------------------------*/
@@ -80,19 +135,19 @@ path {  cor do mapa
 path:hover {
 	fill: #0000FF;  cor do mapa quando o mouse passa por cima 
 } */
-
 .container {
-	width: 1000px; /* serve para o tamanho do conteúdo e do mapa */
-	float: right;
+	width: 1300px; /* serve para o tamanho do conteúdo e do mapa */
+	float: left;
 	height: 522px;
-	border-style:solid; 
+	border-style: solid;
 	border-color: #d3d3d3;
 }
 
 .areaLegend {
-	float: right; /*float com float deixa a legenda solta dentro da div container*/
-	width: 1000px;
-	margin-top:0px;
+	float: left;
+	/*float com float deixa a legenda solta dentro da div container*/
+	width: 1300px;
+	margin-top: 0px;
 	margin-bottom: 0px;
 	text-align: center;
 	border: 0.2px solid gray;
@@ -100,6 +155,6 @@ path:hover {
 	border-radius: 3px;
 	height: 20px;
 	font-weight: bolder;
-	
+
 	/* legenda mapa */
 }

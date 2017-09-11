@@ -25,16 +25,13 @@
 
 			</div>
 
-			<div id="menuHorizontal" class="menu ">
+				<div id="menuHorizontal" class="menu ">
 
 				<h:form>
 					<p:growl id="messages" />
-
 					<p:menubar>
 						<p:submenu label="Inicio" icon="ui-icon-document">
-
 							<p:menuitem value="Início" url="/pages/home.xhtml" />
-
 						</p:submenu>
 
 						<p:submenu label="Institucional" icon="ui-icon-pencil">
@@ -43,36 +40,128 @@
 								icon="ui-icon-arrowreturnthick-1-w" />
 						</p:submenu>
 
+						<p:submenu label="Mapa de Indicadores" icon="ui-icon-gear">
+							<p:submenu label="Ind Escolaridade" icon="ui-icon-document">
+								<p:menuitem value="2010" url="/pages/escolaMunicipalBean.xhtml" />
+								<p:menuitem value="2011" url="/pages/escolaMunicipalBean.xhtml" />
+								<p:menuitem value="2012" url="/pages/escolaMunicipalBean.xhtml" />
+								<p:menuitem value="2013" url="/pages/escolaMunicipalBean.xhtml" />
+								<p:menuitem value="2014" url="/pages/escolaMunicipalBean.xhtml" />
+								<p:menuitem value="2015" url="/pages/escolaMunicipalBean.xhtml" />
+							</p:submenu>
+
+							<p:submenu label="Setor Público Muncicipal">
+								<p:menuitem value="2010"
+									url="/pages/setorPublicoMunicipalMapa.xhtml" />
+								<p:menuitem value="2011"
+									url="/pages/setorPublicoMunicipalMapa.xhtml" />
+								<p:menuitem value="2012"
+									url="/pages/setorPublicoMunicipalMapa.xhtml" />
+								<p:menuitem value="2013"
+									url="/pages/setorPublicoMunicipalMapa.xhtml" />
+								<p:menuitem value="2014"
+									url="/pages/setorPublicoMunicipalMapa.xhtml" />
+								<p:menuitem value="2015"
+									url="/pages/setorPublicoMunicipalMapa.xhtml" />
+							</p:submenu>
+
+							<p:submenu label="Setor Privado Muncicipal">
+								<p:menuitem value="2010"
+									url="/pages/setorPublicoMunicipalMapa.xhtml" />
+								<p:menuitem value="2011"
+									url="/pages/setorPublicoMunicipalMapa.xhtml" />
+								<p:menuitem value="2012"
+									url="/pages/setorPublicoMunicipalMapa.xhtml" />
+								<p:menuitem value="2013"
+									url="/pages/setorPublicoMunicipalMapa.xhtml" />
+								<p:menuitem value="2014"
+									url="/pages/setorPublicoMunicipalMapa.xhtml" />
+								<p:menuitem value="2015"
+									url="/pages/setorPublicoMunicipalMapa.xhtml" />
+							</p:submenu>
+
+							<p:submenu label="Ind. Trabalhador">
+								<p:menuitem value="2010"
+									url="/pages/indicadorTrabalhadorMapa.xhtml" />
+								<p:menuitem value="2011"
+									url="/pages/indicadorTrabalhadorMapa.xhtml" />
+								<p:menuitem value="2012"
+									url="/pages/indicadorTrabalhadorMapa.xhtml" />
+								<p:menuitem value="2013"
+									url="/pages/indicadorTrabalhadorMapa.xhtml" />
+								<p:menuitem value="2014"
+									url="/pages/indicadorTrabalhadorMapa.xhtml" />
+								<p:menuitem value="2015"
+									url="/pages/indicadorTrabalhadorMapa.xhtml" />
+							</p:submenu>
+
+							<p:submenu label="Ind. de Rotatividade">
+								<p:menuitem value="2011"
+									url="/pagesMaps/indicadorRotatividadeMapa2011.xhtml" />
+								<p:menuitem value="2012"
+									url="/pages/indicadorRotatividadeMapa.xhtml" />
+								<p:menuitem value="2013"
+									url="/pages/indicadorRotatividadeMapa.xhtml" />
+								<p:menuitem value="2014"
+									url="/pages/indicadorRotatividadeMapa.xhtml" />
+								<p:menuitem value="2015"
+									url="/pages/indicadorRotatividadeMapa.xhtml" />
+							</p:submenu>
+
+							<p:submenu label="Ind. de Rendimento">
+								<p:submenu label="Rendimento Real">
+									<p:menuitem value="2010"
+										url="/pages/rendimentoNominalMapa.xhtml" />
+									<p:menuitem value="2011"
+										url="/pages/rendimentoNominalMapa.xhtml" />
+									<p:menuitem value="2012"
+										url="/pages/rendimentoNominalMapa.xhtml" />
+									<p:menuitem value="2013"
+										url="/pages/rendimentoNominalMapa.xhtml" />
+									<p:menuitem value="2014"
+										url="/pages/rendimentoNominalMapa.xhtml" />
+									<p:menuitem value="2015"
+										url="/pages/rendimentoNominalMapa.xhtml" />
+								</p:submenu>
+								<p:submenu label="Rendimento Nominal">
+									<p:menuitem value="2010"
+										url="/pages/rendimentoNominalMapa.xhtml" />
+									<p:menuitem value="2011"
+										url="/pages/rendimentoNominalMapa.xhtml" />
+									<p:menuitem value="2012"
+										url="/pages/rendimentoNominalMapa.xhtml" />
+									<p:menuitem value="2013"
+										url="/pages/rendimentoNominalMapa.xhtml" />
+									<p:menuitem value="2014"
+										url="/pages/rendimentoNominalMapa.xhtml" />
+									<p:menuitem value="2015"
+										url="/pages/rendimentoNominalMapa.xhtml" />
+								</p:submenu>
+
+							</p:submenu>
+						</p:submenu>
+
+						<p:submenu label="Tabela de Indicadores" icon="ui-icon-document">
+							<p:menuitem value="Setor Privado Municipal"
+								url="/pages/setorPrivadoMunicipalJSF.xhtml" />
+						</p:submenu>
+
+						<p:menuitem value="Artigos" url="/pages/pdfs.xhtml"
+							icon="ui-icon-close" />
+
 						<p:submenu label="Contatos" icon="ui-icon-help">
 							<p:menuitem value="Contatos" url="/pages/contatos.xhtml"
 								icon="ui-icon-search" />
-
-						</p:submenu>
-
-						<p:submenu label="Indicadores" icon="ui-icon-gear">
-							<p:menuitem							
-								value="Escola Municipal" url="/pages/escolaMunicipalBean.xhtml" />
-								<p:menuitem
-								value="Setor Público Muncicipal" url="/pages/setorPublicoMunicipalMapa.xhtml" />
-								<p:menuitem
-								value="Indicador Trabalhador" url="/pages/indicadorTrabalhadorMapa.xhtml" />
-								<p:menuitem
-								value="Indicador de Rotatividade" url="/pages/indicadorRotatividadeMapa.xhtml" />
-								<p:menuitem
-								value="Redimento Nominal" url="/pages/rendimentoNominalMapa.xhtml" />
-																																
 						</p:submenu>
 
 						<p:menuitem value="Quit" url="http://www.primefaces.org"
 							icon="ui-icon-close" />
 
-
 					</p:menubar>
 				</h:form>
-
 			</div>
 
-			<div id="menuVertical" class="menuVertical">
+			<!-- div id="menuVertical" class="menuVertical">
 
 				<h:form>
 
@@ -111,7 +200,7 @@
 
 				</h:form>
 
-			</div>
+			</div> -->
 
 			<div id="conteudo" class="container">
 				<ui:insert name="conteudo"></ui:insert>

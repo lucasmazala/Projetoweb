@@ -7,10 +7,9 @@
 	template="/templates/modelo2.xhtml">
 
 	<ui:define name="conteudo">
-
-		<script
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5J2jpjcPUhDVp8fEn8g576XoWYkE6uZs&amp;callback=initMap"></script>
-		<script type="text/javascript">
+	
+		 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5J2jpjcPUhDVp8fEn8g576XoWYkE6uZs&amp;callback=initMap" ></script>
+ <script type="text/javascript">
   function initialize() {
     google.maps.visualRefresh = true;
     var isMobile = (navigator.userAgent.toLowerCase().indexOf('android') > -1) ||
@@ -23,8 +22,8 @@
     mapDiv.style.width = isMobile ? '100%' : '1000px';
     mapDiv.style.height = isMobile ? '100%' : '500px';
     var map = new google.maps.Map(mapDiv, {
-      center: new google.maps.LatLng(-7.002646613129687, -36.405708843750006),
-      zoom: 8,
+    	center: new google.maps.LatLng(-7.002646613129687, -36.405708843750006),
+        zoom: 8,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
     map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(document.getElementById('googft-legend-open'));
@@ -35,12 +34,12 @@
       heatmap: { enabled: false },
       query: {
         select: "col3\x3e\x3e0",
-        from: "1BXFw2uHYPR17neqRqLENCYZ45tuw7QS7F-TgLk_C",
+        from: "1deU4Hvq0R_98U6xZkVL6hpm6a32GGVKwyPVbqT3i",
         where: ""
       },
       options: {
         styleId: 2,
-        templateId: 2
+        templateId: 3
       }
     });
 
@@ -64,39 +63,12 @@
 
   google.maps.event.addDomListener(window, 'load', initialize);
 </script>
-		<div id="areaLegend">
-			<p class="areaLegend">Rendimento Nominal</p>
-		</div>
-		<div id="googft-mapCanvas"></div>
-  <input id="googft-legend-open" style="display:none" type="button" value="Legend"></input>
-  <div id="googft-legend">
-    <p id="googft-legend-title">2011</p>
-    <div>
-      <span class="googft-legend-swatch" style="background-color: #cfe2f3"></span>
-      <span class="googft-legend-range">0 to 5</span>
-    </div>
-    <div>
-      <span class="googft-legend-swatch" style="background-color: #9fc5e8"></span>
-      <span class="googft-legend-range">5 to 10</span>
-    </div>
-    <div>
-      <span class="googft-legend-swatch" style="background-color: #6fa8dc"></span>
-      <span class="googft-legend-range">10 to 25</span>
-    </div>
-    <div>
-      <span class="googft-legend-swatch" style="background-color: #3d85c6"></span>
-      <span class="googft-legend-range">25 to 50</span>
-    </div>
-    <div>
-      <span class="googft-legend-swatch" style="background-color: #00ffff"></span>
-      <span class="googft-legend-range">50 to 75</span>
-    </div>
-    <div>
-      <span class="googft-legend-swatch" style="background-color: #0b5394"></span>
-      <span class="googft-legend-range">75 to 100</span>
-    </div>
-    <input id="googft-legend-close" style="display:none" type="button" value="Hide"></input>
-  </div>
+ <div id="areaLegend">
+				<p class="areaLegend">Indicador de Rotatividade</p>
+				</div>
+				<div id="googft-mapCanvas"></div>
+				
 
 	</ui:define>
 </ui:composition>
+ 
