@@ -28,6 +28,20 @@
 	border-color: aqua;
 }
 
+.tabPDF{
+	margin-left:10px;
+	border-collapse: collapse; /*tira o espaço entre linhas e colunas*/
+}
+table.tabPDF tr td{
+	border: 3px solid silver; /* bordas de cada linha e coluna*/
+	padding: 5px;
+}
+
+table.tabPDF td h3{
+	font-size: 18px;
+	color: gray;
+	
+}	
 .rodape {
 	clear: both;
 	text-align: center;
@@ -36,9 +50,10 @@
 	border-radius: 3px;
 	height: 20px;
 	font-weight: bolder;
-	width: 1304px;
+	width: 1350px;
 	border-style: solid;
 	border-color: #d3d3d3;
+	
 	
 }
 
